@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 const { argParser } = require('@henderea/arg-helper')(require('arg'));
-const { processReplace } = require('../lib/matching');
+const { processReplace } = require('@henderea/regex-util');
 const { helpText, styles, style } = require('../lib/helpText');
 const { black, white, red } = styles;
 const path = require('path');

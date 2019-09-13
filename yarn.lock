@@ -15,6 +15,13 @@
   resolved "https://registry.yarnpkg.com/@henderea/arg-helper/-/arg-helper-1.0.0.tgz#ded840d1076ace2ffc6d55898a0cd8c9a1de04f5"
   integrity sha512-GGXz4T0bA8xww6fbF5R7hm4L7tSqomi1hwEGvsmRec9HpLfdkq/Dn900g4j4xzrT4Ar7iKEPFssnGO0El07N3g==
 
+"@henderea/regex-util@^1.0.3":
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/@henderea/regex-util/-/regex-util-1.0.3.tgz#2c023319a1d72ff1789bbdeeac21a2aeee8a0a5d"
+  integrity sha512-urDBeMSyhMxjCNrre7DKsD4Nz02nuoD+4wcNXr4mq8OpwU1GufAMXriHPYEi4nn/al/PawaCJjgIhAevwnBbyw==
+  dependencies:
+    xregexp "^4.2.4"
+
 "@henderea/simple-colors@^1.2.0":
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/@henderea/simple-colors/-/simple-colors-1.2.0.tgz#211e90641f742379d06ef5aaf341ae8c32d51946"
