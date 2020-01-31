@@ -3,9 +3,9 @@
 
 
 "@babel/runtime-corejs2@^7.2.0":
-  version "7.7.7"
-  resolved "https://registry.yarnpkg.com/@babel/runtime-corejs2/-/runtime-corejs2-7.7.7.tgz#44885957b275a5fd70413142eda9cff4662847ac"
-  integrity sha512-P91T3dFYQL7aj44PxOMIAbo66Ag3NbmXG9fseSYaXxapp3K9XTct5HU9IpTOm2D0AoktKusgqzN5YcSxZXEKBQ==
+  version "7.8.4"
+  resolved "https://registry.yarnpkg.com/@babel/runtime-corejs2/-/runtime-corejs2-7.8.4.tgz#e4ed23a8be40fa26b97fb649deaba8144c987593"
+  integrity sha512-7jU2FgNqNHX6yTuU/Dr/vH5/O8eVL9U85MG5aDw1LzGfCvvhXC1shdXfVzCQDsoY967yrAKeLujRv7l8BU+dZA==
   dependencies:
     core-js "^2.6.5"
     regenerator-runtime "^0.13.2"
@@ -15,10 +15,10 @@
   resolved "https://registry.yarnpkg.com/@henderea/arg-helper/-/arg-helper-1.1.0.tgz#f2f0ef797da27432a837afa0394f6eea25388d70"
   integrity sha512-/M7uY5146dbyhrfbwMgzVX7dCybBt+/IkCaQ75rr7Hxh47jSsUgfJuILSuE4NiwTXT9WISyg/tFvGjpfDPf/Pw==
 
-"@henderea/regex-util@^1.0.3":
-  version "1.0.3"
-  resolved "https://registry.yarnpkg.com/@henderea/regex-util/-/regex-util-1.0.3.tgz#2c023319a1d72ff1789bbdeeac21a2aeee8a0a5d"
-  integrity sha512-urDBeMSyhMxjCNrre7DKsD4Nz02nuoD+4wcNXr4mq8OpwU1GufAMXriHPYEi4nn/al/PawaCJjgIhAevwnBbyw==
+"@henderea/regex-util@^1.1.1":
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/@henderea/regex-util/-/regex-util-1.1.1.tgz#ce33f1c15ad4cf249b7e6161a6dc363b3900313c"
+  integrity sha512-LfuSfY+zqzXLBbgYXbxo8asE7m0rOJYWrHK9GrUxVz6aViU6N2o39dbwEbDQuELAuu6P0Uhhv5cYoUX/0sMIvA==
   dependencies:
     xregexp "^4.2.4"
 
