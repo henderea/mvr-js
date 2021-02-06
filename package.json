@@ -1,6 +1,6 @@
 {
   "name": "@henderea/mvr",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "A regex-rename script",
   "main": "index.js",
   "repository": "git@github.com:henderea/mvr-js.git",
@@ -25,7 +25,7 @@
     "prepublishOnly": "yarn ncc:build"
   },
   "bin": {
-    "mvr": "./dist/index.js"
+    "mvr": "dist/index.js"
   },
   "files": [
     "dist/**/*"
