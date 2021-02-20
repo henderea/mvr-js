@@ -1,6 +1,6 @@
 {
   "name": "@henderea/mvr",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "description": "A regex-rename script",
   "main": "index.js",
   "repository": "git@github.com:henderea/mvr-js.git",
