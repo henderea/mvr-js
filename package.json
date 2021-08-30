@@ -7,11 +7,16 @@
   "author": "Eric Henderson <henderea@gmail.com>",
   "license": "MIT",
   "devDependencies": {
+    "@babel/core": "^7.15.0",
+    "@babel/eslint-parser": "^7.15.0",
     "@henderea/arg-helper": "^1.2.1",
     "@henderea/regex-util": "^1.2.4",
     "@henderea/simple-colors": "^1.4.3",
     "@vercel/ncc": "^0.27.0",
-    "arg": "^5.0.0"
+    "arg": "^5.0.0",
+    "eslint": "^7.32.0",
+    "eslint-config-henderea": "1.0.7",
+    "eslint-plugin-import": "^2.24.2"
   },
   "scripts": {
     "ncc:build": "yarn ncc:build:release",
@@ -21,12 +26,17 @@
     "ncc:build:debug:build": "ncc build src/index.js -q -o dist",
     "ncc:build:release": "yarn ncc:clean && yarn ncc:build:release:build && yarn ncc:post-clean",
     "ncc:build:debug": "yarn ncc:clean && yarn ncc:build:debug:build && yarn ncc:post-clean",
-    "prepublishOnly": "yarn ncc:build"
+    "prepublishOnly": "yarn ncc:build",
+    "lint": "eslint --ext .js,.mjs src lib",
+    "lint:fix": "eslint --ext .js,.mjs --fix src lib"
   },
   "bin": {
     "mvr": "dist/index.js"
   },
   "files": [
     "dist/**/*"
-  ]
+  ],
+  "eslintConfig": {
+    "extends": "henderea"
+  }
 }
