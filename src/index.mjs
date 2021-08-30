@@ -1,12 +1,15 @@
 #!/usr/bin/env node
 
-const { argParser } = require('@henderea/arg-helper')(require('arg'));
-const { processReplace } = require('@henderea/regex-util');
-const { helpText, styles, style } = require('../lib/helpText');
+import path from 'path';
+import fs from 'fs';
+import readline from 'readline';
+import { fileURLToPath } from 'url';
+
+import { processReplace } from '@henderea/regex-util';
+
+import { argParser } from '../lib/arg-helper.mjs';
+import { helpText, styles, style } from '../lib/helpText.mjs';
 const { black, white, red } = styles;
-const path = require('path');
-const fs = require('fs');
-const readline = require('readline');
 
 const options = argParser()
   .string('match', '--match', '-m')
@@ -14,6 +17,7 @@ const options = argParser()
   .bool('help', '--help', '-h')
   .bool('noCase', '--no-case', '-i')
   .bool('includeExtension', '--include-extension', '-e')
+  .findVersion(fileURLToPath(import.meta.url), '--version')
   .help(helpText, '--help', '-h')
   .argv;
 
