@@ -11,13 +11,21 @@ import { argParser } from '../lib/arg-helper.mjs';
 import { helpText, styles, style } from '../lib/helpText.mjs';
 const { black, white, red } = styles;
 
+let dirname = fileURLToPath(import.meta.url);
+
+try {
+  dirname = eval('__dirname');
+} catch {
+  //empty
+}
+
 const options = argParser()
   .string('match', '--match', '-m')
   .string('replace', '--replace', '-r')
   .bool('help', '--help', '-h')
   .bool('noCase', '--no-case', '-i')
   .bool('includeExtension', '--include-extension', '-e')
-  .findVersion(fileURLToPath(import.meta.url), '--version')
+  .findVersion(dirname, '--version')
   .help(helpText, '--help', '-h')
   .argv;
 
